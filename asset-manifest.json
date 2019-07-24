@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/fcc-pomodoro-timer/static/css/main.7dab6fc6.chunk.css",
+    "main.js": "/fcc-pomodoro-timer/static/js/main.24b8d057.chunk.js",
+    "main.js.map": "/fcc-pomodoro-timer/static/js/main.24b8d057.chunk.js.map",
+    "runtime~main.js": "/fcc-pomodoro-timer/static/js/runtime~main.2873c90e.js",
+    "runtime~main.js.map": "/fcc-pomodoro-timer/static/js/runtime~main.2873c90e.js.map",
+    "static/js/2.6efc73d3.chunk.js": "/fcc-pomodoro-timer/static/js/2.6efc73d3.chunk.js",
+    "static/js/2.6efc73d3.chunk.js.map": "/fcc-pomodoro-timer/static/js/2.6efc73d3.chunk.js.map",
+    "index.html": "/fcc-pomodoro-timer/index.html",
+    "precache-manifest.76f0467d7c1fca76a1217175b816e5f7.js": "/fcc-pomodoro-timer/precache-manifest.76f0467d7c1fca76a1217175b816e5f7.js",
+    "service-worker.js": "/fcc-pomodoro-timer/service-worker.js",
+    "static/css/main.7dab6fc6.chunk.css.map": "/fcc-pomodoro-timer/static/css/main.7dab6fc6.chunk.css.map",
+    "static/media/gameboy-startup-sound.mp3": "/fcc-pomodoro-timer/static/media/gameboy-startup-sound.790aac18.mp3"
+  }
+}
