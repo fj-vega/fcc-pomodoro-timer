@@ -1,0 +1,206 @@
+/* General styling */
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #D7E894;
+}
+
+.App > * {
+  margin: 1.5rem;
+}
+
+/* Components styling */
+
+#title {
+  font-size: 5rem;
+  color: #00260F;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Timer settings */
+
+.settings-container {
+  display: flex;
+}
+
+#break-label,
+#session-label {
+  font-size: 1.5rem;
+  color: #183030;
+}
+
+#break-length,
+#session-length {
+  margin: 0 1rem;
+  width: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #336854;
+}
+
+.TimerSetting {
+  margin: 0 2rem;
+}
+
+.TimerSetting-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.TimerSetting-btn {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+}
+
+#session-increment,
+#break-increment {
+  background: #D7E894 
+              url('https://i.postimg.cc/htL1FVPj/colored-up.png')
+              center/contain 
+              no-repeat;
+}
+
+#session-decrement,
+#break-decrement {
+  background: #D7E894 
+              url('https://i.postimg.cc/kgTFXqK3/colored-down.png')
+              center/contain 
+              no-repeat;
+}
+
+button:active {
+  transform: translate3d(1.5px, 1.5px, 1.5px);
+}
+
+button::-moz-focus-inner { border: 0; }
+
+/* Timer */
+
+#display {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  border: 5px solid #00260F;
+  border-radius: 3px;
+  padding: 1rem;
+  padding-left: 2rem;
+  background-color: #95BE7A;
+}
+
+#timer-label {
+  height: 4rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #95BE7A;
+  color: #336854;
+  margin-bottom: -1rem;
+}
+
+#time-left {
+  height: 8rem;
+  width: 100%;
+  font-size: 7rem;
+  text-align: center;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #95BE7A;
+  color: #336854;
+}
+
+/* Timer controls */
+
+.controls {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.timer-btn {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  margin: 0 5px;
+}
+
+#start_stop {
+  /* https://i.postimg.cc/k43V7p1P/colored-pause.png - PAUSE Icon */
+  background: #D7E894 
+              url('https://i.postimg.cc/QCgcL3hz/colored-play.png')
+              center/contain 
+              no-repeat;
+}
+
+#reset {
+  background: #D7E894 
+              url('https://i.postimg.cc/prVLTbK4/colored-restart.png')
+              center/contain 
+              no-repeat;
+}
+
+.sr-only {
+  visibility: hidden;
+}
+
+#keyboard-info {
+  text-align: center;
+  line-height: 1.7rem;
+  font-size: 1rem;
+}
+
+.colored-text {
+  color: #336854;
+  font-size: 1.2rem;
+}
+
+/* Simulate button press on kbd input */
+
+.keypress {
+  transform: translate3d(2.5px, 2.5px, 2.5px);
+  /* transition: transform linear, */
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+
+/* Mobile layout, portrait and landscape */
+
+@media (max-width: 460px), (max-height: 500px) and (orientation: landscape) {
+	html { font-size: 7px; }
+
+	#title { text-align: center; }
+
+	#break-label,
+	#session-label {
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+  
+  .TimerSetting-btn {
+    height: 5rem;
+    width: 5rem;
+  }
+
+	.timer-btn {
+		height: 8rem;
+		width: 8rem;
+  }
+  
+  #keyboard-info { display: none; }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  html { font-size: 6px; }
+}
